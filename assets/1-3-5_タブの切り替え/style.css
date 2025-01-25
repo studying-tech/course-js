@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.tab-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 600px;
+}
+
+.tab-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.tab-item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  color: #495057;
+}
+
+.tab-item:hover {
+  background-color: #e9ecef;
+}
+
+.tab-content-container {
+  padding: 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+h2 {
+  color: #343a40;
+  margin-top: 0;
+}
+
+p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.tab-item.active {
+  background-color: white;
+  border-bottom-color: #007bff;
+  color: #007bff;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

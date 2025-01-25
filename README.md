@@ -1,2 +1,7 @@
 # course-js
-JavaScript初級
+
+JavaScript 初級コース
+
+## ディレクトリ
+
+`assets/`: それぞれ対応するチャプターのソースコードが格納されています。

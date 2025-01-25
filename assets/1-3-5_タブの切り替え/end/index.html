@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タブ切り替え</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <ul class="tab-menu" role="tablist">
+        <li class="tab-item active" data-tab="tab1">タブ1</li>
+        <li class="tab-item" data-tab="tab2">タブ2</li>
+        <li class="tab-item" data-tab="tab3">タブ3</li>
+      </ul>
+      <div class="tab-content-container">
+        <div id="tab1" class="tab-content active">
+          <h2>タブ1のコンテンツ</h2>
+          <p>ここにタブ1の内容が入ります。</p>
+        </div>
+        <div id="tab2" class="tab-content">
+          <h2>タブ2のコンテンツ</h2>
+          <p>ここにタブ2の内容が入ります。</p>
+        </div>
+        <div id="tab3" class="tab-content">
+          <h2>タブ3のコンテンツ</h2>
+          <p>ここにタブ3の内容が入ります。</p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

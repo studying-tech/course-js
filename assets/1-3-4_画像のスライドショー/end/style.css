@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#prevSlide,
+#nextSlide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+#prevSlide:hover,
+#nextSlide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#prevSlide {
+  left: 10px;
+}
+
+#nextSlide {
+  right: 10px;
+}
+
+.dot-navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+#playPause {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #4caf50; /* 再生状態の緑色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#playPause:hover {
+  background-color: #45a049; /* 再生状態のホバー時の濃い緑色 */
+}
+
+#playPause.stopped {
+  background-color: #e74c3c; /* 停止状態の赤色 */
+}
+
+#playPause.stopped:hover {
+  background-color: #c0392b; /* 停止状態のホバー時の濃い赤色 */
+}
